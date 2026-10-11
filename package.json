@@ -1,0 +1,13 @@
+{
+  "name": "recall-local",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit && node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "test:browser": "node scripts/browser-test.mjs",
+    "test:browser:extensions": "node scripts/browser-extensions.mjs"
+  },
+  "dependencies": {"react": "^19.1.0", "react-dom": "^19.1.0", "lucide-react": "^0.468.0"},
+  "devDependencies": {"@types/react": "^19.1.0", "@types/react-dom": "^19.1.0", "typescript": "^5.8.0", "esbuild": "^0.25.0", "@playwright/test": "^1.51.0"}
+}
